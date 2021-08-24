@@ -1,0 +1,29 @@
+
+.inscription{
+    margin-top: 100px;
+    display: flex;
+}
+.col-sm{
+    background: rgb(216, 211, 211);
+    color: #444;
+    height: 30px;
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+  }
+
+@media screen and (max-width: 750px) {
+  .inscription{
+      display: flex;
+      flex-direction: column;
+  }
+}
+/*
+height: calc(100vh - 100px);
+   width: calc(220vh - 50px);
+   background: url("../../ImageFernand/kari-shea-1SAnrIxw5OY-unsplash.jpg");
+   background-size:cover;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+*/

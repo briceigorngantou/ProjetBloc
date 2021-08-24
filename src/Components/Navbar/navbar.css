@@ -1,0 +1,88 @@
+.navbar{
+    background: linear-gradient(45deg,white,rgb(216, 211, 211));
+    height: 100px;
+    width: 100%;
+    position:fixed;
+    top: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(216, 211, 211);
+    z-index: 999;
+}
+/*
+    rgb(70, 126, 247);
+    box-shadow:0px 0px 10px rgb(206, 195, 195),
+                0px 0px 30px #777 ;
+*/
+.img_logo{
+    width: 200px;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    right: 10px;
+}
+
+.navlist-search{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 200px;
+}
+.navlist-search-items{
+    align-items: center;
+    list-style: none;
+    height: 50px;
+    padding-top: 10px;
+}
+.profile{
+    width: 70px;
+    height: 70px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.navlist-profile{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.navlist-profile-items{
+    align-items: center;
+    list-style: none;
+    margin-left: 20px;
+    padding-top: 0px;
+}
+
+.form-control{
+    background: url("../../ImageFernand/search.svg") no-repeat scroll 7px 7px;
+    padding-left:35px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 2px 1px 1px rgb(70, 126, 247);
+    border-color:  rgb(70, 126, 247);
+    margin-right: 10px;
+}
+.navlist-btn{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.btn-connexion{
+}
+.navlist-btn-items{
+    align-items: center;
+    list-style: none;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 960px) {
+    .form-control{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .btn-connexion{
+        display: none;
+    }
+}

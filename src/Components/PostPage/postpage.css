@@ -1,0 +1,12 @@
+.postpage{
+    flex: 8;
+
+}
+.title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #444;
+    justify-content: center;
+    margin-top: 10px;
+    display: flex;
+}

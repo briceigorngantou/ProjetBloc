@@ -1,0 +1,46 @@
+.registration{
+    flex: 9;
+}
+.regis{
+    flex-direction: column;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: -7px 0px 10px rgb(206, 195, 195),
+    0px 7px 10px rgb(206, 195, 195) ;
+    margin: 40px;
+    padding: 60px;
+}
+.regis-title{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(70, 126, 247);
+}
+.regis-label{
+    color: #444;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: left;
+    margin-top: 10px;
+}
+.regis-input{
+    margin: 0px;
+    border-bottom: 2px solid rgb(206, 195, 195) ;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+}
+.regis-bouton{
+    font-size: 18px;
+    width: 30%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(216, 211, 211);
+    align-self: center;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid rgb(216, 211, 211);
+    background:rgb(70, 126, 247);
+}
