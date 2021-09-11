@@ -1,13 +1,14 @@
-import React ,{ useState } from 'react';
+import React ,{ useState , useContext} from 'react';
 import { Link } from 'react-router-dom';
 import { PostContext } from '../../../PostContext';
-import SinglePost from '../../SinglePost/SinglePost';
 import './post.css';
 
 function PostCard(props) {
 
     // Destructuration du props ( On recupere la donnee envoyes dans le props )
     const {monPost}=props;
+    // ici je recupere la function de modification  du post courant
+    const {setActualPost}= useContext(PostContext);
 
     const [count_like, setcount_like]=useState(null);
     const [count_comment, setcount_comment]=useState(null);
@@ -21,7 +22,14 @@ function PostCard(props) {
     return (
         <div>
             <div className="post">
-                    <Link to="/Single"><img src={monPost.image} alt="" className="img-post"/></Link>
+                <div>
+                    <Link to="/Single"><img src={monPost.image}
+                    onClick={()=>{
+                        setActualPost(monPost);
+                        console.log(monPost)
+                    }}
+                    alt="" className="img-post"/></Link>
+                </div>
                     <div className="post-info">
                         <div className="post-cats">
                             <span className="post-cats-cat">{monPost.infos1}</span>

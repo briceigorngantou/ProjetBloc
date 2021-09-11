@@ -50,9 +50,9 @@ export default function RightPage(){
                 <ul className="rightpageSocial">
                     <li className="rightpageListItem"><a href="" alt=""><img src={Facebook} className="img_icon" alt=""/> Facebook</a></li>
                     <li className="rightpageListItem"><a href="" alt=""><img src={Twitter} className="img_icon" alt=""/> Twitter</a></li>
-                    <li className="rightpageListItem"><img src={Whatsapp} className="img_icon" alt=""/> +237 675543761</li>
-                    <li className="rightpageListItem"><img src={Mail} className="img_icon" alt=""/> ngantoubrice@gmail.com</li>
-                    <li className="rightpageListItem"><img src={Position} className="img_icon" alt=""/> Bonaberi-Douala</li>
+                    <li className="rightpageListItem"><img src={Whatsapp} className="img_icon" alt=""/> +237 600000000</li>
+                    <li className="rightpageListItem"><img src={Mail} className="img_icon" alt=""/> fernandblog@gmail.com</li>
+                    <li className="rightpageListItem"><img src={Position} className="img_icon" alt=""/> Douala-Cameroun</li>
                 </ul>
             </div>
         </div>

@@ -10,10 +10,11 @@ import { PostContext } from '../../PostContext';
 
 export default function SinglePost(){
 
+    const {ActualPost}= useContext(PostContext);
     return (
         <div className="singlepost">
             <div className="singlepost-info">
-                <img src={ImagePost} className="ImagePost" alt=""/>
+                <img src={ActualPost.image} className="ImagePost" alt=""/>
                 <h3 className="singlepost-titre">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit...
                     <div className="singlepost-edit">

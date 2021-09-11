@@ -25,7 +25,7 @@ import img9 from "./ImageFernand/christopher-robin-ebbinghaus-pgSkeh0yl8o-unspla
 
 function App() {
 
-  const [post, setPost] = useState([
+  const post = [
     {
       id: 1,
       image: img1,
@@ -136,24 +136,25 @@ function App() {
       like: like,
       comment: comment,
     },
-  ]);
+  ];
+
+  const [ActualPost ,setActualPost]=useState(null)
+
     return (
       <div className="App">
-        <Router  forceRefresh={false}>
+        <Router forceRefresh={false}>
           <Navbar/>
-          <PostContext.Provider value={{post,setPost}} >
+          <PostContext.Provider value={{ActualPost,setActualPost,post}} >
             <Route path="/" exact component={Home}/>
             <Route path="/Single" exact component={Single}/>
+            <Route path="/Write" exact component={Write }/>
+            <Route path="/Listings" exact component={ Listings}/>
           </PostContext.Provider>
           <Route path="/Connexion" exact component={Connexion }/>
           <Route path="/Inscription" exact component={ Inscription}/>
-          <Route path="/Listings" exact component={ Listings}/>
           <Route path="/Contact" exact component={Contact }/>
-          <Route path="/Write" exact component={Write }/>
           <Route path="/Settings" exact component={ Settings}/>
-
         </Router>
-
       </div>
     );
 }

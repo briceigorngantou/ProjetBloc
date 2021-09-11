@@ -5,7 +5,7 @@ import { PostContext } from "../../../PostContext";
 
 export default function Post() {
 
-  const {post,setPost}= useContext(PostContext);
+  const {post}= useContext(PostContext);
 
   return (
     <div>

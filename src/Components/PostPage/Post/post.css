@@ -55,7 +55,7 @@
 .img-post:hover{
     box-shadow:0px 0px 0px rgb(206, 195, 195),
                 0px 0px 20px #777 ;
-    transition: all 0.3ms linear;
+    transition: all 0.1ms linear;
     width:101%;
     height: 305px;
 }

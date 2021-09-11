@@ -18,7 +18,7 @@ export default function Navbar(){
                 </div>
                 <ul className="navlist-search">
                     <li className="navlist-search-items">
-                        <input className="form-control" type="search" placeholder="Search..." aria-label="Search"/>
+                        <input className="form-control form-search" type="search" placeholder="Search..." aria-label="Search"/>
                     </li>
                 </ul>
                 {
